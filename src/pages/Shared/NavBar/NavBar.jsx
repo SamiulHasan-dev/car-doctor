@@ -4,15 +4,15 @@ import logo from '../../../assets/logo.svg'
 const NavBar = () => {
 
     const navItems = <>
-    <li><Link to="/">Home</Link></li>
-    <li><Link to="/about">About</Link></li>
-    <li><Link to="/">Home</Link></li>
+    <li><Link to="/" className="font-bold">Home</Link></li>
+    <li><Link to="/about" className="font-bold">About</Link></li>
+    <li><Link to="/" className="font-bold">Home</Link></li>
     </>
 
     
     return (
         <div>
-            <div className="navbar bg-base-100">
+            <div className="navbar bg-base-100 mb-6">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -22,15 +22,15 @@ const NavBar = () => {
         {navItems}
       </ul>
     </div>
-    <Link to="/" className="btn btn-ghost text-xl"><img className="h-16 w-16" src={logo} alt="" /></Link>
+    <Link to="/" className="btn btn-ghost text-xl"><img className="h-16 w-16 md:h-20 md:w-20" src={logo} alt="" /></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
+    <ul className="menu menu-horizontal px-1 mt-5">
       {navItems}
     </ul>
   </div>
   <div className="navbar-end">
-  <button className="btn btn-outline btn-error uppercase ">Appointment</button>
+  <button className="btn btn-outline btn-error uppercase md:mt-4 font-bold">Appointment</button>
   </div>
 </div>
         </div>
