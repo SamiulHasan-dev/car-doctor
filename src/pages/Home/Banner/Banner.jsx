@@ -16,7 +16,7 @@ const Banner = () => {
       <div className='space-y-5 w-1/2 pl-5 md:pl-12'>
         <h2 className="text-4xl text-white font-bold">Affordable Price For Car Servicing</h2>
         <p className='text-white'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
-        <div className='space-x-2'>
+        <div className='md:space-x-2'>
             <button className='btn bg-orange-600 text-white font-semibold border-0'>DISCOVER MODE</button>
             <button className='btn btn-ghost text-white font-semibold border-2 border-gray-200'>LATEST PROJECT</button>
         </div>
@@ -33,7 +33,7 @@ const Banner = () => {
       <div className='space-y-5 w-1/2 pl-5 md:pl-12'>
         <h2 className="text-4xl text-white font-bold">Affordable Price For Car Servicing</h2>
         <p className='text-white'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
-        <div className='space-x-2'>
+        <div className='md:space-x-2'>
             <button className='btn bg-orange-600 text-white font-semibold border-0'>DISCOVER MODE</button>
             <button className='btn btn-ghost text-white font-semibold border-2 border-gray-200'>LATEST PROJECT</button>
         </div>
@@ -50,7 +50,7 @@ const Banner = () => {
       <div className='space-y-5 w-1/2 pl-5 md:pl-12'>
         <h2 className="text-4xl text-white font-bold">Affordable Price For Car Servicing</h2>
         <p className='text-white'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
-        <div className='space-x-2'>
+        <div className='md:space-x-2'>
             <button className='btn bg-orange-600 text-white font-semibold border-0'>DISCOVER MODE</button>
             <button className='btn btn-ghost text-white font-semibold border-2 border-gray-200'>LATEST PROJECT</button>
         </div>
@@ -67,7 +67,7 @@ const Banner = () => {
       <div className='space-y-5 w-1/2 pl-5 md:pl-12'>
         <h2 className="text-4xl text-white font-bold">Affordable Price For Car Servicing</h2>
         <p className='text-white'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
-        <div className='space-x-2'>
+        <div className='md:space-x-2'>
             <button className='btn bg-orange-600 text-white font-semibold border-0'>DISCOVER MODE</button>
             <button className='btn btn-ghost text-white font-semibold border-2 border-gray-200'>LATEST PROJECT</button>
         </div>
