@@ -25,12 +25,12 @@ const NavBar = () => {
     <Link to="/" className="btn btn-ghost text-xl md:mb-3"><img className="h-16 w-16 md:h-20 md:w-20" src={logo} alt="" /></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1 mt-5">
+    <ul className="menu menu-horizontal px-1">
       {navItems}
     </ul>
   </div>
   <div className="navbar-end">
-  <button className="btn uppercase md:mt-4 font-semibold text-orange-500 border-2 border-orange-500 p-2 rounded-lg ">Appointment</button>
+  <button className="btn uppercase font-semibold text-orange-500 border-2 border-orange-500 p-2 rounded-lg ">Appointment</button>
   </div>
 </div>
         </div>
