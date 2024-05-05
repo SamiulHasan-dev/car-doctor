@@ -1,10 +1,9 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import img from '../../assets/images/login/login.svg'
 
-const Login = () => {
+const SignUp = () => {
 
-
-    const handleLogin = event =>{
+    const handleSignUp = event =>{
         event.preventDefault();
     }
 
@@ -17,17 +16,23 @@ const Login = () => {
       <img src={img} alt="" />
     </div>
     <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-      <form onSubmit={handleLogin} className="card-body">
-      <h1 className="text-5xl font-bold text-center">Login now!</h1>
+      <form onSubmit={handleSignUp} className="card-body">
+      <h1 className="text-5xl font-bold text-center">SignUp!</h1>
+      <div className="form-control">
+          <label className="label">
+            <span className="label-text">Name</span>
+          </label>
+          <input name="name" type="text" placeholder="Name" className="input input-bordered" required />
+        </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Email</span>
           </label>
           <input name="email" type="email" placeholder="email" className="input input-bordered" required />
-        </div>
+        </div>       
         <div className="form-control">
           <label className="label">
-            <span className="label-text">Password</span>
+            <span className="label-text">Confirm Password</span>
           </label>
           <input name="password" type="password" placeholder="password" className="input input-bordered" required />
           <label className="label">
@@ -38,7 +43,7 @@ const Login = () => {
           <input  className="btn bg-orange-600 text-white" type="submit" value="Login" />
         </div>
       </form>
-      <p className='text-center pb-10'>New to Car Doctors <Link className='text-orange-600 font-bold' to="/signup">SignUp</Link></p>
+      <p className='text-center pb-10'>Already Have An account? <Link className='text-orange-600 font-bold' to="/login">Login</Link></p>
     </div>
   </div>
 </div>
@@ -46,4 +51,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default SignUp;
