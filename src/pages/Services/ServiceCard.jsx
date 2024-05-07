@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 
 const ServiceCard = ({service}) => {
 
-    const {title, img, price} = service;
+    const {_id, title, img, price} = service;
 
     return (
         <div>
@@ -14,7 +16,7 @@ const ServiceCard = ({service}) => {
     <h2 className="card-title font-bold">{title}</h2>
     <div className="flex justify-between items-center">
     <p className="text-orange-600 font-semibold">Price: ${price}</p>
-    <button className="btn btn-primary">MORE</button>
+    <Link to={`/book/${_id}`}><button className="btn bg-white font-extrabold text-orange-600 text-2xl"><MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight></button></Link>
     </div>
     
   </div>
